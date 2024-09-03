@@ -37,6 +37,6 @@ class Var(object):
     DATABASE_URL = str(getenv('DATABASE_URL', ''))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', ''))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))
-    SHORTLINK_URL = getenv('SHORTLINK_URL', '')
-    SHORTLINK_API = getenv('SHORTLINK_API', '')
+    SHORTLINK_URL = getenv('SHORTLINK_URL', 'https://runurl.in')
+    SHORTLINK_API = getenv('SHORTLINK_API', '357351917d380dd918e3f703485c15083d791064')
     TUTORIAL_URL = getenv('TUTORIAL_URL', 'https://youtu.be/rddlpYLm0G0')    
